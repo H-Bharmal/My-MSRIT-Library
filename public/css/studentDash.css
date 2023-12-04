@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.heading3text{
+    margin-bottom: 10px;
+}
+.container{
+    /* background-color: blue; */
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 70%; */
+    height: 100vh;
+    /* background-image: -webkit-linear-gradient(50deg, rgb(224, 213, 193) 50%, #ffe2e2 50%); */
+}
+
+.studentDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+    width: 90%;
+    padding: 3rem;
+    /* padding-top:9rem; */
+    height: 35vh;
+    background: rgba(0, 0, 0, 0.381);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.studentInfo{
+    background-color: #ffffff74;
+    border-radius:10px;
+    padding:1rem;
+}
+.student{
+    font-size: larger;
+    padding: 1rem;
+    padding-left: 0;
+    /* border-bottom:2px solid red; */
+    background: transparent;
+    
+}
+
+
+.booksIssued{
+    background-color: rgba(0, 0, 0, 0.381);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding:3rem;
+    /* background: transparent; */
+    /* border-bottom: 2px solid orange; */
+    border-radius: 10px;
+    height:50vh;
+
+}
+.bookContainer{
+    background-color: orange;
+    display: flex;
+    justify-content: flex-start;
+    /* padding:1rem;
+     */
+     height: 3rem;
+     background: transparent;
+     
+}
+.booksDetails{
+    /* border-bottom: 2px solid red; */
+    padding:1rem;
+    background-color: #ffffff6c;
+    height: 35vh;
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 10px;
+    /* background: transparent; */
+
+}
+.book{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border-bottom:1px solid rgb(106, 69, 0) ; */
+    width: 20rem;
+    height:3rem;
+    background: transparent;
+    padding:1rem;
+    border: 1px solid rgb(106, 69, 0);
+}
+
+.bottom{
+    background-color: rgb(197, 157, 98);
+    height: 50px;
+    padding: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+
+    
+}
+.studentLogout{
+    height: 2rem;
+    width: 8rem;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    outline: none;
+
+}
+.penalties{
+    /* border-bottom: 2px solid orange; */
+    padding: 1rem;
+}
+.logoutContainer{
+    padding:1rem;
+}
+.studlogo{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scroll bar -------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px; 
+  }
+  ::-webkit-scrollbar-track:hover {
+    background-color: transparent   ;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; 
+  }
+  

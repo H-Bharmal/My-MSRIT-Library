@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;  
+    font-family: 'Lato', sans-serif;;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    background-color: transparent;
+    padding: 2rem;
+
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.greet-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-right: 5rem;
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.381);
+    margin-bottom: 1rem;
+}
+.time-weather{
+    background-color: #ffffffa4;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+.date{
+    /* background-color: #132043; */
+    padding: 2rem;
+}
+.weather{
+    background-color:#ffffff00;
+    padding: 2rem;
+    padding-top: 1rem;
+    
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffa9;
+    padding: 1rem;
+    width: 45rem;
+    font-size: x-large;
+    border-radius: 7px;
+    flex-wrap: wrap;
+}
+.logoutbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 7rem;
+    /* border-radius: 48% 52% 49% 51% / 15% 16% 84% 85%   ; */
+    border-radius: 5px;
+    font-size: medium;
+    border: none;
+    background-color: #0015fecf;
+    color: orange;
+    outline:none;
+    cursor: pointer;
+    /* border: 2px solid orange; */
+}
+.logoutbtn:hover{
+    border:3px solid white;
+
+}
+
+.operationsContainer{
+    height:70vh;
+    background-color: rgba(0, 0, 0, 0.381) ;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y:hidden ;
+    border-radius: 10px;
+}
+
+.op{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#0015fecf ;
+    height:10rem;
+    width: 15rem;
+    margin:2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in-out 0.9s;
+    /* border:2px solid #fff; */
+
+
+    
+}
+.fa-solid{
+    
+    font-size: 2.5rem;
+    color:#fff;
+    margin-bottom: 10px;
+
+}
+.fa-brands{
+    font-size: 2.5rem;
+    color:#fff;
+    margin-bottom: 10px;
+
+}
+.oplink{
+    display: none;
+    margin-bottom: 10px;
+    transition: all ease-in-out 0.9s;
+
+}
+.optext{
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+.op:hover .oplink{
+    display: block;
+    /* transform: translateY(10px); */ 
+}
+#quote-text{
+    font-size: 15px;
+    font-weight: 10;
+}
+
+.lgbtn{
+    font-size: 30px;
+    color:orange;
+}
+/* Define the styles for the scrollbar track */
+::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+  }
+  
+  /* Define the styles for the scrollbar handle or thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Color of the scrollbar thumb */
+    /* border-radius: 3px; Border radius of the thumb */
+  }
+  
+  /* Define the styles for the scrollbar track on hover */
+  ::-webkit-scrollbar-track {
+    background-color: #203f54; /* Color of the track on hover */
+  }
+  
+  /* Define the styles for the scrollbar handle or thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9; /* Color of the thumb on hover */
+  }
+  

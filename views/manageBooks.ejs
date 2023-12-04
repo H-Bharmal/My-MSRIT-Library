@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/manageBooks.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
+</head>
+<body>
+    <div class="wrapper">
+
+   
+    <div class="optionContainer">
+        <!-- <form action=""> -->
+            <button type="submit" id="addBookBtn" onclick="opencont()">Add Book</button>
+            <button type="submit">Show Books</button>
+        <!-- </form> -->
+    </div>
+    <div class="addBookContainer" id="addBookCnt" style="display: none;">
+        <form action="" class="bookAdder">
+            <input type="text" name="name" id="" placeholder="Book Name">
+            <input type="text" name="bookId" id="" placeholder="Book Id">
+            <input type="text" name="bookCategory" id="" placeholder="Book Category">
+            <input type="text" name="bookAuthor" id="" placeholder="Author Name">
+            <button type="button" >Add</button>  
+            <button type="button" id="closeAddWin" onclick="closecont()">close</button>
+        </form>
+
+    </div>
+
+
+
+</div>
+<script>
+
+function opencont(){
+    document.getElementById("addBookCnt").style.display="flex";
+}
+function closecont(){
+    document.getElementById("addBookCnt").style.display="none";
+
+}
+</script>
+</body>
+</html>
