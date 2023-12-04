@@ -120,7 +120,7 @@ app.get("/manageBooks",(req,res)=>{
 
 
 
-  
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
+const serverPort = process.env.PORT || 3000
+app.listen(serverPort, () => {
+    console.log("Server running on port ",serverPort);
 });
